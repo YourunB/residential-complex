@@ -6,16 +6,19 @@ document.addEventListener('DOMContentLoaded', function(){
 	//	open section info
 	
 	$(".key").on("click", (e) => {
-		e.preventDefault()
-		$(".overlay").addClass("open")
-		$(".section__info").addClass("show")
+		showSectionInfo(e);
 	})
 
 	$(".home").on("click", (e) => {
-		e.preventDefault()
-		$(".overlay").addClass("open")
-		$(".section__info").addClass("show")
-	})
+		showSectionInfo(e);
+	});
+
+	function showSectionInfo(e) {
+		e.preventDefault();
+		$(".overlay").addClass("open");
+		$(".section__info").addClass("show");
+		$(".section__info_title").text(e.target.dataset.home);
+	}
 	
 	//	open form
 	

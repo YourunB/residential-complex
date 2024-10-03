@@ -562,7 +562,6 @@ header .header-phone .mobile-phone {
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    cursor: pointer;
     transition: .3s;
 }
 
@@ -593,6 +592,7 @@ header .header-phone .mobile-phone {
 
 .main .main__image .key:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .main .main__image .key img {
