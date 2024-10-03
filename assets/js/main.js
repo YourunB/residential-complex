@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(".section__info_title").text(`Секция ${section}`);
 		document.querySelector('#section-link').href = `section-${section}.html`;
 	}
+
+	$(".list__image").on("click", (e) => {
+		e.preventDefault();
+		$(".overlay").addClass("open");
+		$(".section__info").addClass("show");
+	});
 	
 	//	open form
 	

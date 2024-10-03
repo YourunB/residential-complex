@@ -614,9 +614,10 @@ header .header-phone .mobile-phone {
 }
 
 .section__info {
-    position: absolute;
-    top: -239%;
-    left: 46%;
+    position: fixed;
+    top: -1000%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--white-color);
     width: 300px;
     min-height: 267px;
@@ -629,7 +630,7 @@ header .header-phone .mobile-phone {
 }
 
 .section__info.show {
-    top: 39%;
+    top: 50%;
 }
 
 .section__info .section__info_title {
@@ -886,17 +887,6 @@ header .header-phone .mobile-phone {
 .section .section__photo .content__compas {
     position: relative;
     margin: 30px -10px -10px auto;
-}
-
-.section .section__info.section__info_mobile {
-    display: none;
-    position: fixed;
-    width: 100%;
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateY(0);
 }
 
 .section .section__info.section__info_mobile .section__info_title {
