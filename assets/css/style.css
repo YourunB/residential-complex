@@ -1309,6 +1309,7 @@ header .header-phone .mobile-phone {
     line-height: 1;
     padding: 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .search__main .rooms__count li:last-child {
@@ -1442,7 +1443,7 @@ header .header-phone .mobile-phone {
 }
 
 .filter__mobile.show {
-    transform: translateY(0);
+    transform: translateY(1000%);
 }
 
 .filter__mobile .filter__mobile_hide {
