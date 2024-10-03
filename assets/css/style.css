@@ -63,20 +63,20 @@ img {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background: transparent;
 }
   
 ::-webkit-scrollbar-track {
-    background: #A3BFCE;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
 }
   
 ::-webkit-scrollbar-thumb {
     background-color: var(--text-color);
-    border-radius: 10px;
-    border: 3px solid #050c26; /* Оформление границ бегунка */
+    border-radius: 5px;
+    background-color: var(--violet-color);
 }
 
 @font-face {
