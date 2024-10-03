@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(".section__info").addClass("show");
 		$(".section__info_title").text(`Секция ${section}`);
 		document.querySelector('#section-link').href = `section-${section}.html`;
+		document.querySelector('#floors-link').href = `select-${section}.html`;
 	}
 
 	$(".list__image").on("click", (e) => {
