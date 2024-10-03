@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(".overlay").addClass("open")
 		$(".section__info").addClass("show")
 	})
+
+	$(".home").on("click", (e) => {
+		e.preventDefault()
+		$(".overlay").addClass("open")
+		$(".section__info").addClass("show")
+	})
 	
 	//	open form
 	
