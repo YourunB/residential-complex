@@ -325,6 +325,7 @@ html {
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Gilroy', sans-serif;
     background: var(--white-color);
     color: var(--text-color);
@@ -474,6 +475,7 @@ header .header-phone .mobile-phone {
 
 .main {
     padding: 70px 0 50px;
+    min-height: calc(100vh - 80px);
 }
 
 .main__title {
@@ -494,19 +496,19 @@ header .header-phone .mobile-phone {
     aspect-ratio: 1 / .625;
     margin: 50px 0 0;
     border-radius: 15px;
-    overflow: hidden;
+
 }
 
 .main .main__image_bg {
     width: 100%;
-    min-width: 1000px;
+    min-width: 600px;
     height: 100%;
     object-position: center;
     object-fit: cover;
 }
 
-.container {
-    overflow: hidden;
+.image__box {
+    overflow: auto;
 }
 
 .main .main__image .key {
