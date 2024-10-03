@@ -38,6 +38,7 @@ a {
     --text-color: #242424;
     --violet-color: #50015D;
     --fray-color: #9B9B9B;
+    --violet-transparent: rgba(139, 85, 162, 0.6);
 }
 
 .red-text {
@@ -63,20 +64,20 @@ img {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background: transparent;
 }
   
 ::-webkit-scrollbar-track {
-    background: #A3BFCE;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 5px;
 }
   
 ::-webkit-scrollbar-thumb {
     background-color: var(--text-color);
-    border-radius: 10px;
-    border: 3px solid #050c26; /* Оформление границ бегунка */
+    border-radius: 5px;
+    background-color: var(--violet-color);
 }
 
 @font-face {
@@ -325,6 +326,7 @@ html {
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Gilroy', sans-serif;
     background: var(--white-color);
     color: var(--text-color);
@@ -424,7 +426,9 @@ h1 span, h2 span {
 
 header {
     background-color: var(--violet-color);
-    padding: 40px 0;
+    height: 130px;
+    display: flex;
+    align-items: center;
 }
 
 header .container {
@@ -472,6 +476,7 @@ header .header-phone .mobile-phone {
 
 .main {
     padding: 70px 0 50px;
+    min-height: calc(100vh - 80px);
 }
 
 .main__title {
@@ -492,21 +497,65 @@ header .header-phone .mobile-phone {
     aspect-ratio: 1 / .625;
     margin: 50px 0 0;
     border-radius: 15px;
-    overflow: hidden;
+}
+
+.main .home {
+    display: block;
+    position: absolute;
+    transition: background-color 0.5s;
+}
+
+.main .home:hover {
+    cursor: pointer;
+    background-color: var(--violet-transparent);
+}
+
+.main .home:nth-of-type(1) {
+    left: 44%;
+    top: 49%;
+    width: 33%;
+    height: 46%;
+    clip-path: polygon(62% 2%, 82% 12%, 77% 57%, 81% 60%, 82% 64%, 39% 102%, 19% 82%, 20% 31%)
+}
+
+.main .home:nth-of-type(2) {
+    left: 61%;
+    top: 27%;
+    width: 28.5%;
+    height: 44%;
+    clip-path: polygon(15% 56%, 19% 12%, 34% 3%, 58% 10%, 67% 14%, 85% 25%, 74% 86%, 63% 95%, 40% 83%, 35% 85%, 31% 83%, 33% 65%);
+}
+
+.main .home:nth-of-type(3) {
+    left: 52%;
+    top: 28%;
+    width: 21%;
+    height: 32.5%;
+    clip-path: polygon(15% 19%, 37% 9%, 62% 18%, 63% 18%, 67% 19%, 69% 25%, 69% 19%, 68% 47%, 65% 72%, 61% 70%, 44% 80%, 14% 67%);
 }
 
 .main .main__image_bg {
     width: 100%;
     height: 100%;
-    object-position: center;
     object-fit: cover;
+    object-position: center;
 }
 
-.main .main__image .key {
+.image-box {
+    position: relative;
+    width: 100%;
+    min-width: 800px;
+    overflow: auto;
+}
+
+.image-wrapper {
+    overflow: auto;
+}
+
+.main .main__image .key,
+.main .main__image .lock {
     position: absolute;
     background-color: var(--white-color);
-    top: 33%;
-    left: 54%;
     width: 2.34375%;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -515,6 +564,31 @@ header .header-phone .mobile-phone {
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
+}
+
+.main .main__image .key:nth-of-type(1) {
+    top: 53%;
+    left: 70%;
+}
+.main .main__image .key:nth-of-type(2) {
+    top: 35%;
+    left: 84%;
+}
+.main .main__image .key:nth-of-type(3) {
+    top: 33%;
+    left: 54%;
+}
+.main .main__image .lock:nth-of-type(4) {
+    top: 42%;
+    left: 21%;
+}
+.main .main__image .lock:nth-of-type(5) {
+    top: 24%;
+    left: 28%;
+}
+.main .main__image .lock:nth-of-type(6) {
+    top: 9%;
+    left: 46%;
 }
 
 .main .main__image .key:hover {
