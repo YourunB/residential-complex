@@ -479,6 +479,10 @@ header .header-phone .mobile-phone {
     min-height: calc(100vh - 80px);
 }
 
+.home-page .overlay {
+    opacity: 0;
+}
+
 .main__title {
     width: 100%;
     flex-wrap: wrap;

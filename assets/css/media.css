@@ -131,6 +131,10 @@
 }
 
 @media screen and (max-width: 576px) {
+    .home-page .overlay {
+        opacity: 1;
+    }
+    
     h1, h2 {
         font-size: 34px;
         line-height: 39.44px;
