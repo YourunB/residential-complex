@@ -2,20 +2,35 @@ document.addEventListener('DOMContentLoaded', function(){
 	var lazyLoadInstance = new LazyLoad({
 	});
 
+	const sections = document.querySelectorAll('.home');
+
 	$(".related__apartments_list").css("width", $(".related__apartments_list .apartment").length * 404 + "px")
 	//	open section info
 	
 	$(".key").on("click", (e) => {
-		e.preventDefault()
-		$(".overlay").addClass("open")
-		$(".section__info").addClass("show")
+		showSectionInfo(e);
 	})
 
 	$(".home").on("click", (e) => {
-		e.preventDefault()
-		$(".overlay").addClass("open")
-		$(".section__info").addClass("show")
-	})
+		showSectionInfo(e);
+	});
+
+	function showSectionInfo(e) {
+		e.preventDefault();
+		const section = e.target.dataset.home;
+		sections[section - 1].classList.add("home_checked");
+		$(".overlay").addClass("open");
+		$(".section__info").addClass("show");
+		$(".section__info_title").text(`Секция ${section}`);
+		document.querySelector('#section-link').href = `section-${section}.html`;
+		document.querySelector('#floors-link').href = `select-${section}.html`;
+	}
+
+	$(".list__image").on("click", (e) => {
+		e.preventDefault();
+		$(".overlay").addClass("open");
+		$(".section__info").addClass("show");
+	});
 	
 	//	open form
 	
@@ -25,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	})
 	
 	$(".modal .modal-close img, .overlay").on("click", () => {
+		sections.forEach(section => section.classList.remove("home_checked"));
 		$(".overlay, .modal").removeClass("open")
 		$(".section__info, .overlay").removeClass("show")
 	})
