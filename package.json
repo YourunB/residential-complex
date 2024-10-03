@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "format:fix": "npx prettier . --write",
+    "ci:format": "npx prettier . --check"
   },
   "devDependencies": {
     "lite-server": "^2.6.1",
