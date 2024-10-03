@@ -503,19 +503,16 @@ header .header-phone .mobile-phone {
     width: 100%;
     min-width: 600px;
     height: 100%;
-    object-position: center;
-    object-fit: cover;
 }
 
 .image__box {
+    position: relative;
     overflow: auto;
 }
 
 .main .main__image .key {
     position: absolute;
     background-color: var(--white-color);
-    top: 33%;
-    left: 54%;
     width: 2.34375%;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -524,6 +521,19 @@ header .header-phone .mobile-phone {
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
+}
+
+.main .main__image .key:nth-of-type(1) {
+    top: 53%;
+    left: 70%;
+}
+.main .main__image .key:nth-of-type(2) {
+    top: 35%;
+    left: 84%;
+}
+.main .main__image .key:nth-of-type(3) {
+    top: 33%;
+    left: 54%;
 }
 
 .main .main__image .key:hover {
