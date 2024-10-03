@@ -510,6 +510,10 @@ header .header-phone .mobile-phone {
     background-color: var(--violet-transparent);
 }
 
+.main .home_checked {
+    background-color: var(--violet-transparent);
+}
+
 .main .home:nth-of-type(1) {
     left: 44%;
     top: 49%;
