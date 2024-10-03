@@ -809,11 +809,14 @@ header .header-phone .mobile-phone {
 .section .section__photo {
     display: flex;
     width: 66%;
+    justify-content: center;
     align-items: center;
 }
 
 .section .section__photo .section__photo_navigation {
     margin: auto 15px auto 0;
+    overflow: auto;
+    min-width: 30px;
 }
 
 .section .section__photo .section__photo_navigation a {
