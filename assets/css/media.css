@@ -157,7 +157,7 @@
     }
 
     header {
-        padding: 20px 0;
+        height: 80px;
     }
 
     header .home-link img, header .home-link span, header .header-phone span {

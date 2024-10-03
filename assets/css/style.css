@@ -424,7 +424,9 @@ h1 span, h2 span {
 
 header {
     background-color: var(--violet-color);
-    padding: 40px 0;
+    height: 130px;
+    display: flex;
+    align-items: center;
 }
 
 header .container {
@@ -497,9 +499,14 @@ header .header-phone .mobile-phone {
 
 .main .main__image_bg {
     width: 100%;
+    min-width: 1000px;
     height: 100%;
     object-position: center;
     object-fit: cover;
+}
+
+.container {
+    overflow: hidden;
 }
 
 .main .main__image .key {
