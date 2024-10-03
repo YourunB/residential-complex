@@ -1516,8 +1516,7 @@ header .header-phone .mobile-phone {
     z-index: 20;
     background: rgba(40, 40, 40, 0.4);
     transform: translateX(-1000%);
-    transition: .5s;
-    transition-delay: .5s;
+    transition: .3s;
 }
 
 .overlay.open {

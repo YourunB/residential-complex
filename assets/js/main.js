@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(".overlay").addClass("open");
 		$(".section__info").addClass("show");
 		$(".section__info_title").text(`Секция ${section}`);
+		document.querySelector('#section-link').href = `section-${section}.html`;
 	}
 	
 	//	open form
