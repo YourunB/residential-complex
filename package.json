@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "lite-server",
+    "format:fix": "npx prettier . --write",
+    "ci:format": "npx prettier . --check"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "prettier": "^3.3.3"
+  }
+}

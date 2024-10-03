@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+	<link rel="shortcut icon" href="assets/images/home/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <title>СОК</title>
+  </head>
+
+  <body class="home-page">
+    <header>
+      <div class="container">
+        <a class="home-link" href="/residential-complex/">
+          <img src="assets/images/back-arrow.svg" />
+          <span>Вернуться на главную</span>
+          <img class="mobile-home" src="assets/images/mobile-home.svg" />
+        </a>
+        <a class="header-logo" href="/residential-complex/">
+          <img src="assets/images/logo.svg" />
+        </a>
+        <a class="header-phone" href="tel:+74950030063">
+          <span>+7 (495) 003-00-63</span>
+          <img class="mobile-phone" src="assets/images/mobile-phone.svg" />
+        </a>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="main__title">
+          <h1>Выбрать <span class="red-text">квартиру</span></h1>
+          <nav class="main__nav">
+            <ul>
+              <li>
+                <a class="btn btn-active" href="/residential-complex/"><span>3D-генплан</span></a>
+              </li>
+              <li>
+                <a class="btn btn-border" href="/residential-complex/"><span>2D-генплан</span></a>
+              </li>
+              <li>
+                <a class="btn btn-border" href="/residential-complex/search.html"><span>По параметрам</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main__image">
+          <picture>
+            <div class="image-wrapper">
+              <div class="image-box">
+                <img
+                  class="lazy main__image_bg"
+                  src="assets/images/home/main@2x.png"
+                  alt="Выбрать секцию"
+                  title="Выбрать секцию"
+                />
+                <span class="home" data-home="1"></span>
+                <span class="home" data-home="2"></span>
+                <span class="home" data-home="3"></span>
+                <div class="key" data-home="1">
+                  <img src="assets/images/key.png" />
+                </div>
+                <div class="key" data-home="2">
+                  <img src="assets/images/key.png" />
+                </div>
+                <div class="key" data-home="3">
+                  <img src="assets/images/key.png" />
+                </div>
+                <div class="lock">
+                  <img src="assets/images/lock.png" />
+                </div>
+                <div class="lock">
+                  <img src="assets/images/lock.png" />
+                </div>
+                <div class="lock">
+                  <img src="assets/images/lock.png" />
+                </div>
+              </div>
+            </div>
+          </picture>
+          <div class="section__info">
+            <p class="section__info_title">Секция 1</p>
+            <ul class="section__info_list">
+              <li>IV кв. 2027</li>
+              <li>13 этажей</li>
+            </ul>
+            <ul class="section__info_line">
+              <li class="line-capacity">Студия</li>
+              <li class="line-square">от 39,5 м</li>
+              <li class="line-price">от 18,04 млн ₽</li>
+            </ul>
+            <ul class="section__info_line">
+              <li class="line-capacity">1-комнатные</li>
+              <li class="line-square">от 39,5 м</li>
+              <li class="line-price">от 18,04 млн ₽</li>
+            </ul>
+            <ul class="section__info_line">
+              <li class="line-capacity">2-комнатные</li>
+              <li class="line-square">от 49,5 м</li>
+              <li class="line-price">от 18,04 млн ₽</li>
+            </ul>
+            <div class="section__footer">
+              <a id="section-link" class="btn btn-active" href="/residential-complex/"><span>Выбрать квартиру</span></a>
+              <a id="floors-link" class="btn btn-border" href="/residential-complex/"><span>План корпуса</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="overlay"></div>
+    <div class="modal">
+      <div class="modal-close">
+        <img src="assets/images/close.svg" />
+      </div>
+      <p class="modal__title">Забронировать квартиру</p>
+      <p class="modal__description">
+        Введите Имя и номер телефона, на который менеджер перезвонит вам и ответит на вопросы
+      </p>
+      <form>
+        <input type="text" placeholder="Имя*" name="name" />
+        <input type="text" placeholder="Телефон*" name="phone" />
+        <button type="submit">Забронировать</button>
+        <p>Нажимая кнопку, вы подтверждаете свое согласие на обработку персональных данных</p>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/lazyload.min.js" defer></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

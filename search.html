@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+	<link rel="shortcut icon" href="assets/images/home/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <title>По параметрам</title>
+  </head>
+
+  <body class="home-page">
+    <header>
+      <div class="container">
+        <a class="home-link" href="/residential-complex/">
+          <img src="assets/images/back-arrow.svg" />
+          <span>Вернуться на главную</span>
+          <img class="mobile-home" src="assets/images/mobile-home.svg" />
+        </a>
+        <a class="header-logo" href="/residential-complex/">
+          <img src="assets/images/logo.svg" />
+        </a>
+        <a class="header-phone" href="tel:+74950030063">
+          <span>+7 (495) 003-00-63</span>
+          <img class="mobile-phone" src="assets/images/mobile-phone.svg" />
+        </a>
+      </div>
+    </header>
+    <section class="search">
+      <div class="container">
+        <div class="main__title">
+          <h1>Выбрать <span class="red-text">квартиру</span></h1>
+          <nav class="main__nav">
+            <ul>
+              <li>
+                <a class="btn btn-border" href="/residential-complex/"><span>3D-генплан</span></a>
+              </li>
+              <li>
+                <a class="btn btn-border" href="/residential-complex/"><span>2D-генплан</span></a>
+              </li>
+              <li>
+                <a class="btn btn-active btn-border__parameters" href="/residential-complex/search.html"><span>По параметрам</span></a>
+              </li>
+              <li>
+                <a class="btn btn-border open__filter" href="/residential-complex/"><span>Фильтры</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <form class="search__main">
+          <div class="search__main_item">
+            <p class="item-title">Секция</p>
+            <!--
+                    <div class="dropdawn-item search__main_section">
+                        <p><span>Секция 1 • l кв. 2025</span><img src="assets/images/search/dropdawn.svg" /></p>
+                        <ul class="dropdawn-item__list">
+                            <li>Секция 1 • l кв. 2025</li>
+                            <li>Секция 2 • l кв. 2025</li>
+                            <li>Секция 3 • l кв. 2025</li>
+                        </ul>
+                    </div>
+                -->
+            <div class="select__wrapper">
+              <select>
+                <option>Секция 1 • l кв. 2025</option>
+                <option>Секция 2 • l кв. 2025</option>
+                <option>Секция 3 • l кв. 2025</option>
+              </select>
+            </div>
+          </div>
+          <div class="search__main_item">
+            <p class="item-title">Количество комнат</p>
+            <ul class="rooms__count">
+              <li>Студия</li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4+</li>
+            </ul>
+          </div>
+          <div class="search__main_item">
+            <p class="item-title">Стоимость, млн ₽</p>
+            <div class="rooms__prices">
+              <div class="rooms__prices_item">
+                <p>от</p>
+                <input type="text" class="price__low" value="12,32" />
+              </div>
+              <div class="rooms__prices_item">
+                <p>до</p>
+                <input type="text" class="price__hight" value="38,22" />
+              </div>
+            </div>
+          </div>
+          <div class="search__main_item">
+            <p class="item-title">Площадь, м2</p>
+            <div class="rooms__square">
+              <div class="rooms__square_item">
+                <p>от</p>
+                <input type="text" class="square__low" value="12,32" />
+              </div>
+              <div class="rooms__square_item">
+                <p>до</p>
+                <input type="text" class="square__hight" value="38,22" />
+              </div>
+            </div>
+          </div>
+          <div class="search__main_item">
+            <p class="item-title">Этаж</p>
+            <div class="rooms__floor">
+              <div class="rooms__floo_item">
+                <p>от</p>
+                <input type="text" class="floo__low" value="12,32" />
+              </div>
+              <div class="rooms__floo_item">
+                <p>до</p>
+                <input type="text" class="floo__hight" value="38,22" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="search__list">
+      <div class="container">
+        <div class="search__list_header">
+          <!--
+                <div class="dropdawn-item search__list_price">
+                    <p><span>Цена по возрастанию</span><img src="assets/images/search/dropdawn.svg" /></p>
+                    <ul class="dropdawn-item__list">
+                        <li>Цена по возрастанию</li>
+                        <li>Цена по убыванию</li>
+                    </ul>
+                </div>
+            -->
+          <div class="select__wrapper">
+            <select>
+              <option>Цена по возрастанию</option>
+              <option>Цена по убыванию</option>
+            </select>
+          </div>
+          <div class="search__list_toggle">
+            <a class="active">
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="7" height="7" stroke="white" />
+                <rect x="11.5" y="0.5" width="7" height="7" stroke="white" />
+                <rect x="0.5" y="11.5" width="7" height="7" stroke="white" />
+                <rect x="11.5" y="11.5" width="7" height="7" stroke="white" />
+              </svg>
+            </a>
+            <a>
+              <svg width="23" height="14" viewBox="0 0 23 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="5" y1="1" x2="23" y2="1" stroke="#242424" stroke-width="2" />
+                <line y1="1" x2="3" y2="1" stroke="#242424" stroke-width="2" />
+                <line x1="5" y1="7" x2="16" y2="7" stroke="#242424" stroke-width="2" />
+                <line y1="7" x2="3" y2="7" stroke="#242424" stroke-width="2" />
+                <line x1="5" y1="13" x2="12" y2="13" stroke="#242424" stroke-width="2" />
+                <line y1="13" x2="3" y2="13" stroke="#242424" stroke-width="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="search__list_content apartments">
+          <div class="apartment">
+            <div class="apartment_image">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/apartments/related.png 1x, assets/images/apartments/related@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/apartments/related_mob.png" />
+                <img
+                  class="lazy cart__image"
+                  src="assets/images/apartments/related_low.png"
+                  data-srcset="assets/images/apartments/related@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+            </div>
+            <div class="apartment_info">
+              <p class="apartment_info--title">1-комнатная квартира №160</p>
+              <p class="apartment_info--prices">
+                <span class="current__price red-text">31 268 293 ₽</span>
+                <span class="old__price">34 742 548 ₽</span>
+              </p>
+            </div>
+            <p class="apartment_info--description">352 517 ₽/м • Сдан • 2/19 этаж</p>
+            <div class="apartment__filter_list">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/search/search-list.png 1x, assets/images/search/search-list@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/search/search-list_mob.png" />
+                <img
+                  class="lazy list__image"
+                  src="assets/images/search/search-list_low.png"
+                  data-srcset="assets/images/search/search-list@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+              <div class="list__item">
+                <p class="list__item_text apartment__name">1-комнатная квартира №160</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Цена за м²</p>
+                <p class="list__item_text apartment__price_meter">352 517 ₽</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Площадь</p>
+                <p class="list__item_text apartment__square">62.56 м²</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Этаж</p>
+                <p class="list__item_text apartment__floor">2/19 этаж</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Срок сдачи</p>
+                <p class="list__item_text apartment__date">IV кв. 2027</p>
+              </div>
+              <div class="list__item list__item_prices">
+                <p class="list__item_title apartment__price_old">34 742 548 ₽</p>
+                <p class="list__item_text apartment__price_current red-text">31 268 293 ₽</p>
+              </div>
+              <div class="show__apartment">
+                <a class="btn" href="/residential-complex/cart.html">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="apartment">
+            <div class="apartment_image">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/apartments/related.png 1x, assets/images/apartments/related@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/apartments/related_mob.png" />
+                <img
+                  class="lazy cart__image"
+                  src="assets/images/apartments/related_low.png"
+                  data-srcset="assets/images/apartments/related@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+            </div>
+            <div class="apartment_info">
+              <p class="apartment_info--title">1-комнатная квартира №160</p>
+              <p class="apartment_info--prices">
+                <span class="current__price red-text">31 268 293 ₽</span>
+                <span class="old__price">34 742 548 ₽</span>
+              </p>
+            </div>
+            <p class="apartment_info--description">352 517 ₽/м • Сдан • 2/19 этаж</p>
+            <div class="apartment__filter_list">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/search/search-list.png 1x, assets/images/search/search-list@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/search/search-list_mob.png" />
+                <img
+                  class="lazy list__image"
+                  src="assets/images/search/search-list_low.png"
+                  data-srcset="assets/images/search/search-list@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+              <div class="list__item">
+                <p class="list__item_text apartment__name">1-комнатная квартира №160</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Цена за м²</p>
+                <p class="list__item_text apartment__price_meter">352 517 ₽</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Площадь</p>
+                <p class="list__item_text apartment__square">62.56 м²</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Этаж</p>
+                <p class="list__item_text apartment__floor">2/19 этаж</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Срок сдачи</p>
+                <p class="list__item_text apartment__date">IV кв. 2027</p>
+              </div>
+              <div class="list__item list__item_prices">
+                <p class="list__item_title apartment__price_old">34 742 548 ₽</p>
+                <p class="list__item_text apartment__price_current red-text">31 268 293 ₽</p>
+              </div>
+              <div class="show__apartment">
+                <a class="btn" href="/residential-complex/cart.html">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="apartment">
+            <div class="apartment_image">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/apartments/related.png 1x, assets/images/apartments/related@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/apartments/related_mob.png" />
+                <img
+                  class="lazy cart__image"
+                  src="assets/images/apartments/related_low.png"
+                  data-srcset="assets/images/apartments/related@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+            </div>
+            <div class="apartment_info">
+              <p class="apartment_info--title">1-комнатная квартира №160</p>
+              <p class="apartment_info--prices">
+                <span class="current__price red-text">31 268 293 ₽</span>
+                <span class="old__price">34 742 548 ₽</span>
+              </p>
+            </div>
+            <p class="apartment_info--description">352 517 ₽/м • Сдан • 2/19 этаж</p>
+            <div class="apartment__filter_list">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/search/search-list.png 1x, assets/images/search/search-list@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/search/search-list_mob.png" />
+                <img
+                  class="lazy list__image"
+                  src="assets/images/search/search-list_low.png"
+                  data-srcset="assets/images/search/search-list@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+              <div class="list__item">
+                <p class="list__item_text apartment__name">1-комнатная квартира №160</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Цена за м²</p>
+                <p class="list__item_text apartment__price_meter">352 517 ₽</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Площадь</p>
+                <p class="list__item_text apartment__square">62.56 м²</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Этаж</p>
+                <p class="list__item_text apartment__floor">2/19 этаж</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Срок сдачи</p>
+                <p class="list__item_text apartment__date">IV кв. 2027</p>
+              </div>
+              <div class="list__item list__item_prices">
+                <p class="list__item_title apartment__price_old">34 742 548 ₽</p>
+                <p class="list__item_text apartment__price_current red-text">31 268 293 ₽</p>
+              </div>
+              <div class="show__apartment">
+                <a class="btn" href="/residential-complex/cart.html">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="apartment">
+            <div class="apartment_image">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/apartments/related.png 1x, assets/images/apartments/related@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/apartments/related_mob.png" />
+                <img
+                  class="lazy cart__image"
+                  src="assets/images/apartments/related_low.png"
+                  data-srcset="assets/images/apartments/related@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+            </div>
+            <div class="apartment_info">
+              <p class="apartment_info--title">1-комнатная квартира №160</p>
+              <p class="apartment_info--prices">
+                <span class="current__price red-text">31 268 293 ₽</span>
+                <span class="old__price">34 742 548 ₽</span>
+              </p>
+            </div>
+            <p class="apartment_info--description">352 517 ₽/м • Сдан • 2/19 этаж</p>
+            <div class="apartment__filter_list">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/search/search-list.png 1x, assets/images/search/search-list@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/search/search-list_mob.png" />
+                <img
+                  class="lazy list__image"
+                  src="assets/images/search/search-list_low.png"
+                  data-srcset="assets/images/search/search-list@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+              <div class="list__item">
+                <p class="list__item_text apartment__name">1-комнатная квартира №160</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Цена за м²</p>
+                <p class="list__item_text apartment__price_meter">352 517 ₽</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Площадь</p>
+                <p class="list__item_text apartment__square">62.56 м²</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Этаж</p>
+                <p class="list__item_text apartment__floor">2/19 этаж</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Срок сдачи</p>
+                <p class="list__item_text apartment__date">IV кв. 2027</p>
+              </div>
+              <div class="list__item list__item_prices">
+                <p class="list__item_title apartment__price_old">34 742 548 ₽</p>
+                <p class="list__item_text apartment__price_current red-text">31 268 293 ₽</p>
+              </div>
+              <div class="show__apartment">
+                <a class="btn" href="/residential-complex/cart.html">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="apartment">
+            <div class="apartment_image">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/apartments/related.png 1x, assets/images/apartments/related@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/apartments/related_mob.png" />
+                <img
+                  class="lazy cart__image"
+                  src="assets/images/apartments/related_low.png"
+                  data-srcset="assets/images/apartments/related@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+            </div>
+            <div class="apartment_info">
+              <p class="apartment_info--title">1-комнатная квартира №160</p>
+              <p class="apartment_info--prices">
+                <span class="current__price red-text">31 268 293 ₽</span>
+                <span class="old__price">34 742 548 ₽</span>
+              </p>
+            </div>
+            <p class="apartment_info--description">352 517 ₽/м • Сдан • 2/19 этаж</p>
+            <div class="apartment__filter_list">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/search/search-list.png 1x, assets/images/search/search-list@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/search/search-list_mob.png" />
+                <img
+                  class="lazy list__image"
+                  src="assets/images/search/search-list_low.png"
+                  data-srcset="assets/images/search/search-list@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+              <div class="list__item">
+                <p class="list__item_text apartment__name">1-комнатная квартира №160</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Цена за м²</p>
+                <p class="list__item_text apartment__price_meter">352 517 ₽</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Площадь</p>
+                <p class="list__item_text apartment__square">62.56 м²</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Этаж</p>
+                <p class="list__item_text apartment__floor">2/19 этаж</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Срок сдачи</p>
+                <p class="list__item_text apartment__date">IV кв. 2027</p>
+              </div>
+              <div class="list__item list__item_prices">
+                <p class="list__item_title apartment__price_old">34 742 548 ₽</p>
+                <p class="list__item_text apartment__price_current red-text">31 268 293 ₽</p>
+              </div>
+              <div class="show__apartment">
+                <a class="btn" href="/residential-complex/cart.html">Смотреть</a>
+              </div>
+            </div>
+          </div>
+          <div class="apartment">
+            <div class="apartment_image">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/apartments/related.png 1x, assets/images/apartments/related@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/apartments/related_mob.png" />
+                <img
+                  class="lazy cart__image"
+                  src="assets/images/apartments/related_low.png"
+                  data-srcset="assets/images/apartments/related@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+            </div>
+            <div class="apartment_info">
+              <p class="apartment_info--title">1-комнатная квартира №160</p>
+              <p class="apartment_info--prices">
+                <span class="current__price red-text">31 268 293 ₽</span>
+                <span class="old__price">34 742 548 ₽</span>
+              </p>
+            </div>
+            <p class="apartment_info--description">352 517 ₽/м • Сдан • 2/19 этаж</p>
+            <div class="apartment__filter_list">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  data-srcset="assets/images/search/search-list.png 1x, assets/images/search/search-list@2x.png 2x"
+                />
+                <source media="(max-width: 991px)" data-srcset="assets/images/search/search-list_mob.png" />
+                <img
+                  class="lazy list__image"
+                  src="assets/images/search/search-list_low.png"
+                  data-srcset="assets/images/search/search-list@2x.png 2x"
+                  alt="1-комнатная квартира №160"
+                  title="1-комнатная квартира №160"
+                />
+              </picture>
+              <div class="list__item">
+                <p class="list__item_text apartment__name">1-комнатная квартира №160</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Цена за м²</p>
+                <p class="list__item_text apartment__price_meter">352 517 ₽</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Площадь</p>
+                <p class="list__item_text apartment__square">62.56 м²</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Этаж</p>
+                <p class="list__item_text apartment__floor">2/19 этаж</p>
+              </div>
+              <div class="list__item hide-table">
+                <p class="list__item_title">Срок сдачи</p>
+                <p class="list__item_text apartment__date">IV кв. 2027</p>
+              </div>
+              <div class="list__item list__item_prices">
+                <p class="list__item_title apartment__price_old">34 742 548 ₽</p>
+                <p class="list__item_text apartment__price_current red-text">31 268 293 ₽</p>
+              </div>
+              <div class="show__apartment">
+                <a class="btn" href="/residential-complex/cart.html">Смотреть</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search__list_footer">
+          <a class="btn btn-active" href="/residential-complex/"><span>Показать еще</span></a>
+        </div>
+      </div>
+    </section>
+    <div class="filter__mobile">
+      <a class="filter__mobile_hide">
+        <img src="assets/images/search/dropdawn.svg" />
+      </a>
+      <p class="filter__mobile_title">Фильтр</p>
+      <form class="search__main">
+        <div class="search__main_item">
+          <p class="item-title">Секция</p>
+          <!--
+                <div class="dropdawn-item search__main_section">
+                    <p><span>Секция 1 • l кв. 2025</span><img src="assets/images/search/dropdawn.svg" /></p>
+                    <ul class="dropdawn-item__list">
+                        <li>Секция 1 • l кв. 2025</li>
+                        <li>Секция 2 • l кв. 2025</li>
+                        <li>Секция 3 • l кв. 2025</li>
+                    </ul>
+                </div>
+            -->
+          <div class="select__wrapper">
+            <select>
+              <option>Секция 1 • l кв. 2025</option>
+              <option>Секция 2 • l кв. 2025</option>
+              <option>Секция 3 • l кв. 2025</option>
+            </select>
+          </div>
+        </div>
+        <div class="search__main_item">
+          <p class="item-title">Количество комнат</p>
+          <ul class="rooms__count">
+            <li>Студия</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4+</li>
+          </ul>
+        </div>
+        <div class="search__main_item">
+          <p class="item-title">Стоимость, млн ₽</p>
+          <div class="rooms__prices">
+            <div class="rooms__prices_item">
+              <p>от</p>
+              <input type="text" class="price__low" value="12,32" />
+            </div>
+            <div class="rooms__prices_item">
+              <p>до</p>
+              <input type="text" class="price__hight" value="38,22" />
+            </div>
+          </div>
+        </div>
+        <div class="search__main_item">
+          <p class="item-title">Площадь, м2</p>
+          <div class="rooms__square">
+            <div class="rooms__square_item">
+              <p>от</p>
+              <input type="text" class="square__low" value="12,32" />
+            </div>
+            <div class="rooms__square_item">
+              <p>до</p>
+              <input type="text" class="square__hight" value="38,22" />
+            </div>
+          </div>
+        </div>
+        <div class="search__main_item">
+          <p class="item-title">Этаж</p>
+          <div class="rooms__floor">
+            <div class="rooms__floo_item">
+              <p>от</p>
+              <input type="text" class="floo__low" value="12,32" />
+            </div>
+            <div class="rooms__floo_item">
+              <p>до</p>
+              <input type="text" class="floo__hight" value="38,22" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="filter__mobile_footer">
+        <a class="btn btn-active btn__show" href="/residential-complex/"><span>Показать варианты</span></a>
+        <a class="btn btn-border btn__reset" href="/residential-complex/"><span>Сбросить</span></a>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/lazyload.min.js" defer></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
