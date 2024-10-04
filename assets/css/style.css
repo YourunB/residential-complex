@@ -671,6 +671,10 @@ header .header-phone .mobile-phone {
   top: 9%;
   left: 46%;
 }
+.main .main__image .lock:nth-of-type(6) {
+  top: 45%;
+  left: 49%;
+}
 
 .main .main__image .key:hover {
   transform: scale(1.2);
